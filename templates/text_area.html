@@ -6,10 +6,10 @@
 </head>
 <body>
     <h1 style = font-size:50px>Vice Verse</h1>
-    <label>
-        <textarea placeholder="Enter text to reverse" cols="70" rows="5"></textarea>
+    <form action="{% url 'reverse' %}">
+        <textarea placeholder="Enter text to reverse" cols="70" rows="5" name="usertext"></textarea>
         <br><br>
         <input type="submit" value="Enter">
-    </label>
+    </form>
 </body>
 </html>
